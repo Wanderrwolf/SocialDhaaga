@@ -127,3 +127,30 @@ footer {
 
   .section { padding: 80px 24px; }
 }
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 16px;
+}
+
+.hero-sub {
+  font-size: 18px;
+  max-width: 720px;
+  margin: 0 auto 30px;
+  color: var(--gray);
+}
+
+.hero-cta {
+  margin-top: 30px;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--dark);
+  border: 1px solid var(--border);
+  margin-left: 12px;
+}
+
