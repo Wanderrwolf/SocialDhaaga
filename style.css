@@ -8,9 +8,7 @@
   --border: #eee;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -26,23 +24,12 @@ header {
   background: #ffffff;
   padding: 18px 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 96px;
-  width: auto;
-  display: block;
 }
 
 nav a {
@@ -61,8 +48,15 @@ nav a:hover {
 /* Hero */
 
 .hero {
-  padding: 120px 80px;
+  padding: 120px 80px 80px;
   max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-logo img {
+  height: 140px;
+  margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -74,19 +68,19 @@ nav a:hover {
 
 .hero p {
   font-size: 18px;
-  max-width: 650px;
+  max-width: 700px;
+  margin: 0 auto;
   color: var(--gray);
 }
 
-.accent {
-  color: var(--primary);
-}
+.accent { color: var(--primary); }
 
 /* Sections */
 
 .section {
   padding: 100px 80px;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section h2 {
@@ -94,14 +88,6 @@ nav a:hover {
   font-size: 40px;
   margin-bottom: 24px;
 }
-
-.section p {
-  max-width: 720px;
-  font-size: 17px;
-  color: var(--gray);
-}
-
-/* Grid Cards */
 
 .services {
   display: grid;
@@ -115,78 +101,9 @@ nav a:hover {
   padding: 30px;
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.04);
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-}
-
-/* Buttons */
-
-.btn {
-  display: inline-block;
-  padding: 14px 28px;
-  background: var(--primary);
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 20px;
 }
 
 /* Footer */
 
 footer {
-  background: var(--dark);
-  color: #ffffff;
-  padding: 60px 80px;
-  margin-top: 120px;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
-  color: #ccc;
-}
-
-footer a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/* Responsive */
-
-@media (max-width: 768px) {
-
-  header {
-    padding: 16px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    margin-top: 12px;
-  }
-
-  nav a {
-    margin-left: 0;
-    margin-right: 20px;
-  }
-
-  .hero, .section {
-    padding: 80px 24px;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-  }
-
-  .section h2 {
-    font-size: 32px;
-  }
-
-  .logo img {
-    height: 72px;
-  }
-}
+  back
