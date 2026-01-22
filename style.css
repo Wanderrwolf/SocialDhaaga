@@ -84,3 +84,9 @@ footer a {
   color: #ffffff;
   text-decoration: none;
 }
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+
