@@ -187,4 +187,42 @@ body {
   color: var(--gray);
 }
 
-/* FOOTER*
+/* FOOTER */
+
+footer {
+  background: var(--dark);
+  color: #ffffff;
+  padding: 50px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .main-header {
+    padding: 20px;
+  }
+
+  .header-logo {
+    right: 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-logo img {
+    height: 130px;
+  }
+
+  .engine-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 70px 24px;
+  }
+
+}
