@@ -1,49 +1,109 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Social Dhaaga | Weaving Brands into Culture</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap');
 
-<header>
-<div class="logo">
-  <img src="/assets/logo.png" alt="Social Dhaaga">
-</div>
+:root {
+  --primary: #d12c6a;
+  --dark: #1f1f1f;
+  --light: #faf9f7;
+  --gray: #666;
+  --border: #eee;
+}
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="brands.html">For Brands</a>
-    <a href="creators.html">For Creators</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+* { box-sizing: border-box; }
 
-<div class="hero">
-  <h1>Weaving <span class="accent">Brands</span> into <span class="accent">Culture</span></h1>
-  <p>Social Dhaaga is a culture-first marketing and community agency helping brands win the hearts of Gujarat through creators, content, and communities.</p>
-</div>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
 
-<div class="section">
-  <h2>What We Do</h2>
-  <div class="services">
-    <div class="card">Influencer Marketing</div>
-    <div class="card">Community Building</div>
-    <div class="card">Content Studio</div>
-    <div class="card">Meme Marketing</div>
-    <div class="card">Events & Activations</div>
-    <div class="card">IP Creation</div>
-    <div class="card">Brand Strategy</div>
-    <div class="card">Social Media Management</div>
-  </div>
-</div>
+/* Header */
 
-<footer>
-  <p>© 2026 Social Dhaaga. Culture is our language.</p>
-</footer>
+header {
+  background: #ffffff;
+  padding: 18px 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-</body>
-</html>
+nav a {
+  margin-left: 32px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
 
+nav a:hover {
+  color: var(--primary);
+}
 
+/* Hero */
+
+.hero {
+  padding: 120px 80px 80px;
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-logo img {
+  height: 140px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 56px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--gray);
+}
+
+.accent { color: var(--primary); }
+
+/* Sections */
+
+.section {
+  padding: 100px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+}
+
+/* Footer */
+
+footer {
+  back
