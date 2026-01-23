@@ -76,14 +76,16 @@ body {
 
 .hero {
   text-align: center;
-  padding: 90px 20px 70px;
+  padding: 80px 20px 40px;
 }
 
+
 .hero img {
-  width: 280px;
-  max-width: 85%;
-  margin-bottom: 30px;
+  width: 320px;
+  max-width: 90%;
+  margin-bottom: 25px;
 }
+
 
 
 .hero h1 {
@@ -289,6 +291,12 @@ body {
 
 .main-header.hide {
   transform: translateY(-100%);
+}
+
+@media (min-width: 1200px) {
+  .hero img {
+    width: 380px;
+  }
 }
 
 
