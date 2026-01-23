@@ -1,74 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Social Dhaaga | Weaving Brands into Culture</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fffaf8;
+  color: #111;
+}
 
-<header class="main-header">
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  padding: 18px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
 
-  <a href="index.html" class="header-logo">
-    <img src="assets/logo.png" alt="Social Dhaaga Logo">
-  </a>
+.header-logo {
+  position: absolute;
+  left: 60px;
+}
 
-  <nav class="main-nav">
-    <a href="about.html">About</a>
-    <a href="brands.html">For Brands</a>
-    <a href="creators.html">For Creators</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+.header-logo img {
+  height: 52px;
+}
 
-</header>
+.main-nav a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
 
+.main-nav a:hover {
+  color: #e63b6f;
+}
 
-<section class="hero center">
-  <div class="hero-logo">
-    <img src="assets/logo.png" alt="Social Dhaaga Logo">
-  </div>
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 120px;
+}
 
-  <p class="hero-eyebrow">
-    Helping brands win Gujarat by becoming part of its culture, not just its ads.
-  </p>
+.hero-logo {
+  width: 120px;
+  margin-bottom: 25px;
+}
 
-  <h1>
-    Weaving <span class="accent">Brands</span> into <span class="accent">Culture</span>
-  </h1>
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 54px;
+  margin-bottom: 10px;
+}
 
-  <p class="hero-sub">
-    We are a culture-first marketing and community network building relevance for brands
-    through creators, content, communities, and IPs across Gujarat.
-  </p>
+.accent {
+  color: #e63b6f;
+}
 
-  <div class="hero-cta">
-    <a href="contact.html" class="btn">Build Culture With Us</a>
-    <a href="creators.html" class="btn secondary">For Creators</a>
-  </div>
-</section>
+.hero p {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-<section class="section culture-engine center">
+.culture-section {
+  padding: 120px 60px;
+  text-align: center;
+  background: #fff2f6;
+}
 
-  <h2>Culture is the New Currency</h2>
+.culture-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 46px;
+  margin-bottom: 10px;
+  color: #e63b6f;
+}
 
-  <p class="section-intro">
-    In a world flooded with ads, only brands that become part of culture earn attention,
-    trust, and loyalty. Social Dhaaga helps brands move from campaigns to cultural presence.
-  </p>
+.culture-subtitle {
+  max-width: 720px;
+  margin: 0 auto 60px;
+  font-size: 18px;
+  color: #444;
+}
 
-  <div class="engine-grid">
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
-    <div class="engine-card">
-      <h3>Cultural Insight</h3>
-      <p>Deep understanding of Gujarat’s language, trends, and community behavior to decode what truly resonates.</p>
-    </div>
+.culture-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 22px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    <div class="engine-card">
-      <h3>Content & Storytelling</h3>
-      <p>Premium, platform-native content that feels local, authentic, and culturally fluent.</p>
-    </div>
+.culture-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.12);
+}
 
-    <div class="engine-card">
-      <h3>
+.culture-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
 
+.culture-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
 
+@media (max-width: 768px) {
+  .culture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-logo {
+    left: 20px;
+  }
+
+  .main-header {
+    padding: 18px 20px;
+  }
+}
