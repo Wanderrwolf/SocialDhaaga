@@ -80,9 +80,11 @@ body {
 }
 
 .hero img {
-  width: 160px;
-  margin-bottom: 25px;
+  width: 280px;
+  max-width: 85%;
+  margin-bottom: 30px;
 }
+
 
 .hero h1 {
   font-family: 'Poppins', sans-serif;
@@ -288,4 +290,5 @@ body {
 .main-header.hide {
   transform: translateY(-100%);
 }
+
 
