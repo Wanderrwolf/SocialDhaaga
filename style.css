@@ -191,3 +191,66 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Smooth page feel */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade + slide in for sections */
+.section, .hero {
+  animation: fadeUp 0.9s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card hover premium lift */
+.card, .contact-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover, .contact-card:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* Hero subtle float */
+.hero img {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Nav link underline animation */
+.main-nav a {
+  position: relative;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--primary);
+  left: 50%;
+  bottom: -6px;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.main-nav a:hover::after {
+  width: 60%;
+}
+
