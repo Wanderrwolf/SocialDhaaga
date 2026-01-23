@@ -299,4 +299,25 @@ body {
   }
 }
 
+.hero-cta {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 36px;
+  border: 2px solid #e63b6f;
+  border-radius: 999px;
+  color: #e63b6f;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(230, 59, 111, 0.15);
+}
+
+.hero-cta:hover {
+  background: #e63b6f;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(230, 59, 111, 0.25);
+}
+
 
