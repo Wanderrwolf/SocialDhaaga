@@ -211,3 +211,51 @@ body {
     font-size: 32px;
   }
 }
+
+.card, .contact-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover, .contact-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 30px 60px rgba(230,59,111,0.18);
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.main-nav a {
+  position: relative;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--primary);
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+  width: 60%;
+}
+.hero img {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
