@@ -270,3 +270,22 @@ body {
   transform: translateY(0);
 }
 
+/* Smart Hide Header */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
+  z-index: 999;
+}
+
+.main-header.scrolled {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  backdrop-filter: blur(8px);
+}
+
+.main-header.hide {
+  transform: translateY(-100%);
+}
+
