@@ -30,13 +30,13 @@ body {
 }
 
 
-.header-logo img {
-  height: 48px;
+.header-logo {
+  position: absolute;
+  left: 50px;
 }
 
-.main-nav {
-  display: flex;
-  gap: 30px;
+.header-logo img {
+  height: 50px;
 }
 
 .main-nav a {
@@ -134,4 +134,5 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 
