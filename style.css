@@ -19,6 +19,8 @@ body {
   color: var(--text);
 }
 
+/* Header */
+
 .main-header {
   position: relative;
   display: flex;
@@ -29,33 +31,45 @@ body {
   border-bottom: 1px solid #eee;
 }
 
-
 .header-logo {
   position: absolute;
-  left: 50px;
+  left: 40px;
 }
 
 .header-logo img {
-  height: 50px;
+  height: 56px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 40px;
 }
 
 .main-nav a {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: all 0.25s ease;
 }
 
 .main-nav a:hover {
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
   color: var(--primary);
 }
 
+/* Hero */
+
 .hero {
   text-align: center;
-  padding: 100px 20px 60px;
+  padding: 100px 20px 70px;
 }
 
 .hero img {
-  width: 140px;
+  width: 160px;
   margin-bottom: 30px;
 }
 
@@ -76,6 +90,8 @@ body {
   color: #555;
 }
 
+/* Sections */
+
 .section {
   max-width: 1100px;
   margin: 0 auto;
@@ -95,6 +111,8 @@ body {
   font-size: 17px;
   color: #555;
 }
+
+/* Cards */
 
 .card-grid {
   display: grid;
@@ -120,36 +138,8 @@ body {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .main-header {
-    flex-direction: column;
-    gap: 15px;
-  }
+/* Contact */
 
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Top Navigation Spacing & Elevation */
-.main-nav a {
-  margin: 0 18px;
-  padding: 10px 18px;
-  border-radius: 10px;
-  transition: all 0.25s ease;
-}
-
-.main-nav a:hover {
-  background: #fff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transform: translateY(-2px);
-}
-
-/* Contact Grid */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -178,11 +168,26 @@ body {
 }
 
 /* Mobile */
+
 @media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-logo {
+    position: static;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
 }
-
-
-
