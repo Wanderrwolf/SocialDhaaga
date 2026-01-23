@@ -1,134 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Dhaaga | Weaving Brands into Culture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-:root {
-  --bg: #fff7f9;
-  --primary: #e63b6f;
-  --text: #1f1f1f;
-  --card-bg: #ffffff;
-  --shadow: 0 12px 30px rgba(0,0,0,0.08);
-}
+<header class="main-header">
+  <a href="index.html" class="header-logo">
+    <img src="assets/logo.png" alt="Social Dhaaga">
+  </a>
 
-* {
-  box-sizing: border-box;
-}
+  <nav class="main-nav">
+    <a href="about.html">About</a>
+    <a href="brands.html">For Brands</a>
+    <a href="creators.html">For Creators</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-}
+<section class="hero">
+  <img src="assets/logo.png" alt="Social Dhaaga Logo">
+  <h1>Weaving <span>Brands</span> into <span>Culture</span></h1>
+  <p>Helping brands win by becoming part of culture, not just ads.</p>
+</section>
 
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-}
+<section class="section">
+  <h2>Culture is the New Currency</h2>
+  <p>Campaigns create visibility. Culture creates influence.</p>
 
-.header-logo img {
-  height: 48px;
-}
+  <div class="card-grid">
+    <div class="card">
+      <h3>Cultural Insight</h3>
+      <p>Understanding language, trends and community behaviour.</p>
+    </div>
+    <div class="card">
+      <h3>Content & Storytelling</h3>
+      <p>Creating culturally fluent, platform-native content.</p>
+    </div>
+    <div class="card">
+      <h3>Creator Network</h3>
+      <p>Working with voices that influence communities.</p>
+    </div>
+    <div class="card">
+      <h3>Campaign Execution</h3>
+      <p>Turning strategy into real-world cultural impact.</p>
+    </div>
+  </div>
+</section>
 
-.main-nav {
-  display: flex;
-  gap: 30px;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 500;
-}
-
-.main-nav a:hover {
-  color: var(--primary);
-}
-
-.hero {
-  text-align: center;
-  padding: 100px 20px 60px;
-}
-
-.hero img {
-  width: 140px;
-  margin-bottom: 30px;
-}
-
-.hero h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 52px;
-  margin: 0;
-}
-
-.hero h1 span {
-  color: var(--primary);
-}
-
-.hero p {
-  max-width: 700px;
-  margin: 20px auto 0;
-  font-size: 18px;
-  color: #555;
-}
-
-.section {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.section h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 42px;
-  color: var(--primary);
-}
-
-.section p {
-  max-width: 700px;
-  margin: 15px auto 50px;
-  font-size: 17px;
-  color: #555;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.card {
-  background: var(--card-bg);
-  padding: 35px;
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  text-align: left;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-}
-
-.card h3 {
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .main-header {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-}
+</body>
+</html>
