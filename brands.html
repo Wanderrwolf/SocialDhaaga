@@ -179,10 +179,13 @@
     for (let i = 0; i < reveals.length; i++) {
       const windowHeight = window.innerHeight;
       const elementTop = reveals[i].getBoundingClientRect().top;
-      const revealPoint = 100;
+      const elementBottom = reveals[i].getBoundingClientRect().bottom;
+      const revealPoint = 120;
 
-      if (elementTop < windowHeight - revealPoint) {
+      if (elementTop < windowHeight - revealPoint && elementBottom > 0) {
         reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
       }
     }
   }
@@ -190,24 +193,10 @@
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll();
 </script>
-<script>
-const reveals = document.querySelectorAll('.section, .card, .hero, .contact-card');
 
-function revealOnScroll() {
-  const windowHeight = window.innerHeight;
-  reveals.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < windowHeight - 100) {
-      el.classList.add('active');
-    }
-  });
-}
-
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
-</script>
 
 </body>
 </html>
+
 
 
