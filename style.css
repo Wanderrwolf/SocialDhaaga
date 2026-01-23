@@ -20,13 +20,15 @@ body {
 }
 
 .main-header {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px 50px;
   background: #fff;
   border-bottom: 1px solid #eee;
 }
+
 
 .header-logo img {
   height: 48px;
@@ -132,3 +134,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
