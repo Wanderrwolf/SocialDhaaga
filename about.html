@@ -136,7 +136,7 @@
   <h2>Let’s Build Brands That Matter</h2>
   <p>
     Culture moves fast. Attention is scarce.  
-    We help brands stay relevant, influential, and ahead of the curve.
+    We help brands stay relevant, influential and ahead of the curve.
   </p>
 </section>
 
@@ -158,9 +158,26 @@
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll();
 </script>
+<script>
+const reveals = document.querySelectorAll('.section, .card, .hero, .contact-card');
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < windowHeight - 100) {
+      el.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
+</script>
 
 </body>
 </html>
+
 
 
 
