@@ -320,4 +320,18 @@ body {
   box-shadow: 0 12px 30px rgba(230, 59, 111, 0.25);
 }
 
+/* Ensure hero CTA shows on mobile */
+@media (max-width: 768px) {
+  .hero-cta {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+
+  .hero {
+    padding-bottom: 60px;
+  }
+}
+
 
