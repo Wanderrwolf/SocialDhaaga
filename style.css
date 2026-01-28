@@ -359,3 +359,9 @@ body {
     width: 380px;
   }
 }
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
