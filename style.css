@@ -365,3 +365,15 @@ body {
   color: inherit;
   display: block;
 }
+
+.contact-card a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-card a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
