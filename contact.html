@@ -1,37 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <title>Contact | Social Dhaaga</title>
-  <meta name="description" content="Contact Social Dhaaga for culture-first marketing, creator collaborations and digital growth.">
+
+  <meta name="description" content="Get in touch with Social Dhaaga. Work with us as an artist, label or brand within the Gujarati music ecosystem.">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://socialdhaaga.com/contact.html">
   <link rel="icon" type="image/png" href="/favicon.png">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Contact | Social Dhaaga">
-  <meta property="og:description" content="Reach out to Social Dhaaga and let’s build culturally powerful brands together.">
-  <meta property="og:image" content="https://socialdhaaga.com/og-image.png">
-  <meta property="og:url" content="https://socialdhaaga.com/contact.html">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contact | Social Dhaaga">
-  <meta name="twitter:description" content="Reach out to Social Dhaaga and let’s build culturally powerful brands together.">
-  <meta name="twitter:image" content="https://socialdhaaga.com/og-image.png">
-
   <link rel="stylesheet" href="style.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C98ZHVHC76"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C98ZHVHC76');
-</script>
-
 </head>
 
 <body>
@@ -43,37 +24,39 @@
 
   <nav class="main-nav">
     <a href="about.html">About</a>
-    <a href="brands.html">For Brands</a>
-    <a href="creators.html">For Creators</a>
+    <a href="creators.html">For Artists</a>
+    <a href="index.html#labels">For Labels</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <section class="section">
   <h2>Start a Conversation</h2>
-  <p>Reach out and let’s build something culturally powerful together.</p>
+
+  <p>
+    Whether you're an artist, label or brand,
+    if you're serious about building through music and culture,
+    we should talk.
+  </p>
 
   <div class="contact-grid">
 
-   <div class="contact-card">
+```
+<div class="contact-card">
   <h4>Email</h4>
-  <p>
-    <a href="mailto:connect@socialdhaaga.com">
-      connect@socialdhaaga.com
-    </a>
-  </p>
+  <p><a href="mailto:connect@socialdhaaga.com">connect@socialdhaaga.com</a></p>
 </div>
 
+<div class="contact-card">
+  <h4>Phone</h4>
+  <p>+91 7676444437</p>
+</div>
 
-    <div class="contact-card">
-      <h4>Phone</h4>
-      <p>+91 7676444437</p>
-    </div>
-
-    <div class="contact-card">
-      <h4>Instagram</h4>
-      <p>@Social.dhaaga</p>
-    </div>
+<div class="contact-card">
+  <h4>Instagram</h4>
+  <p>@socialdhaaga</p>
+</div>
+```
 
   </div>
 </section>
@@ -81,31 +64,32 @@
 <footer class="main-footer">
   <div class="footer-container">
 
-    <div class="footer-brand">
-      <img src="assets/logo.png" alt="Social Dhaaga Logo">
-      <p>Weaving Brands into Culture</p>
-      <span>Backed by Take It Eazy Media</span>
-    </div>
+```
+<div class="footer-brand">
+  <img src="assets/logo.png" alt="Social Dhaaga Logo">
+  <p>Building the pipeline Gujarati music needs</p>
+</div>
 
-    <div class="footer-links">
-      <h4>Explore</h4>
-      <a href="about.html">About</a>
-      <a href="brands.html">For Brands</a>
-      <a href="creators.html">For Creators</a>
-      <a href="contact.html">Contact</a>
-    </div>
+<div class="footer-links">
+  <h4>Explore</h4>
+  <a href="about.html">About</a>
+  <a href="creators.html">For Artists</a>
+  <a href="index.html#labels">For Labels</a>
+  <a href="contact.html">Contact</a>
+</div>
 
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <p>Email: connect@socialdhaaga.com</p>
-      <p>Phone: +91 7676444437</p>
-      <p>Instagram: @socialdhaaga</p>
-    </div>
+<div class="footer-contact">
+  <h4>Contact</h4>
+  <p>Email: connect@socialdhaaga.com</p>
+  <p>Phone: +91 7676444437</p>
+  <p>Instagram: @socialdhaaga</p>
+</div>
+```
 
   </div>
 
   <div class="footer-bottom">
-    <p>© <span id="year"></span> Social Dhaaga. All rights reserved.</p>
+    <p>© <span id="year"></span> Social Dhaaga</p>
   </div>
 </footer>
 
@@ -113,30 +97,5 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
-<script>
-  const reveals = document.querySelectorAll(".section, .card, .contact-card, .hero");
-
-  function revealOnScroll() {
-    for (let i = 0; i < reveals.length; i++) {
-      const windowHeight = window.innerHeight;
-      const elementTop = reveals[i].getBoundingClientRect().top;
-      const elementBottom = reveals[i].getBoundingClientRect().bottom;
-      const revealPoint = 120;
-
-      if (elementTop < windowHeight - revealPoint && elementBottom > 0) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-
-  window.addEventListener("scroll", revealOnScroll);
-  revealOnScroll();
-</script>
-
 </body>
 </html>
-
-
-
